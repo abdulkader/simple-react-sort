@@ -52,7 +52,7 @@ const DataTable = ({ data }) => {
 
   return (
     <Fragment>
-      <form method="post" onSubmit={handleSubmit}>
+      <form method="post" onSubmit={handleSubmit} className="p-4 mb-4">
         <input
           type="text"
           name="keyword"
@@ -67,46 +67,46 @@ const DataTable = ({ data }) => {
         <div className="flex flex-nowrap justify-start w-full">
           <div
             onClick={() => onSortClick("location.city")}
-            className="p-1 w-2/12"
+            className="p-1 w-2/12 bg-gray-300 text-sm font-semibold cursor-pointer text-center"
           >
             city
           </div>
           <div
             onClick={() => onSortClick("location.state")}
-            className="p-1 w-2/12"
+            className="p-1 w-2/12 bg-gray-300 text-sm font-semibold cursor-pointer text-center"
           >
             state
           </div>
           <div
             onClick={() => onSortClick("location.country")}
-            className="p-1 w-2/12"
+            className="p-1 w-2/12 bg-gray-300 text-sm font-semibold cursor-pointer text-center"
           >
             countrty
           </div>
           <div
             onClick={() => onSortClick("location.postcode")}
-            className="p-1 w-2/12"
+            className="p-1 w-2/12 bg-gray-300 text-sm font-semibold cursor-pointer text-center"
           >
             postcode
           </div>
           <div
             onClick={() => onSortClick("location.street.number")}
-            className="p-1 w-2/12"
+            className="p-1 w-2/12 bg-gray-300 text-sm font-semibold cursor-pointer text-center"
           >
             number
           </div>
-          <div onClick={() => onSortClick("name.first")} className="p-1 w-2/12">
+          <div onClick={() => onSortClick("name.first")} className="p-1 w-2/12 bg-gray-300 text-sm font-semibold cursor-pointer text-center">
             name
           </div>
           <div
             onClick={() => onSortClick("location.coordinates.latitude")}
-            className="p-1 w-2/12"
+            className="p-1 w-2/12 bg-gray-300 text-sm font-semibold cursor-pointer text-center"
           >
             latitude
           </div>
           <div
             onClick={() => onSortClick("location.coordinates.longitude")}
-            className="p-1 w-2/12"
+            className="p-1 w-2/12 bg-gray-300 text-sm font-semibold cursor-pointer text-center"
           >
             longitude
           </div>
